@@ -1,0 +1,45 @@
+/* Scoped styles for the 191-Frame 3D Scroll Animation Stage */
+.scroll-stage-container {
+  position: relative;
+  height: 560vh;
+  width: 100%;
+  background: #020714;
+}
+
+.sticky-viewport {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 68%, #0c2659 0%, #040d24 62%, #020714 100%);
+}
+
+#sequenceCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+.hero-top-heading {
+  position: absolute;
+  top: 13vh;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: min(920px, calc(100% - 32px));
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  will-change: opacity, transform, filter;
+}

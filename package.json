@@ -1,0 +1,9 @@
+{
+  "name": "anmol-digital-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anmol Digital Academy — 191-Frame 3D Scroll Animation & Course Website",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

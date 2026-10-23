@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Anmol Digital Academy | Learn • Practice • Grow • Earn</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0284c7",
+            "primary-glow": "#38bdf8",
+            "whatsapp": "#25D366",
+            "whatsapp-hover": "#1ebd5b",
+            "background-light": "#f8fafc",
+            "background-dark": "#070b19",
+          },
+          fontFamily: {
+            display: ["Outfit", "sans-serif"],
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .neon-glow-primary {
+      box-shadow: 0 0 25px -4px rgba(56, 189, 248, 0.45);
+    }
+    .neon-glow-whatsapp {
+      box-shadow: 0 0 22px -3px rgba(37, 211, 102, 0.5);
+    }
+    .glass-card {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans transition-colors duration-200 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Transparent Top Navigation Bar -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-card bg-slate-950/25 border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a class="flex items-center gap-3 group" href="#hero-stage">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-400 to-indigo-500 flex items-center justify-center shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform duration-300">
+            <span class="text-white font-black text-2xl font-display tracking-tight">A</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl font-extrabold font-display tracking-tight text-white">ANMOL</span>
+              <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-sky-500/15 text-sky-400 border border-sky-500/30">Academy</span>
+            </div>
+            <p class="text-[11px] font-semibold text-slate-300 tracking-wider uppercase">Digital Excellence</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-200">
+          <a class="hover:text-sky-400 transition-colors" href="#hero-stage">Home</a>
+          <a class="hover:text-sky-400 transition-colors" href="#framework">Learning Framework</a>
+          <a class="hover:text-sky-400 transition-colors" href="#courses">Flagship Courses</a>
+          <a class="hover:text-sky-400 transition-colors" href="#results">Student Success</a>
+          <a class="hover:text-sky-400 transition-colors" href="#contact">Contact &amp; Batches</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a class="flex items-center gap-2 px-3.5 py-2 text-xs font-bold rounded-lg border border-white/20 bg-white/5 hover:border-sky-400 text-white transition-all backdrop-blur-sm" href="tel:+919922777105">
+            <span class="material-symbols-outlined text-sky-400 text-base">call</span>
+            <span>+91 9922777105</span>
+          </a>
+          <a class="flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#1ebd5b] text-white text-xs font-bold rounded-lg neon-glow-whatsapp transition-transform hover:-translate-y-0.5" href="https://wa.me/919922777105" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-.981z"></path></svg>
+            <span>WhatsApp DM</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 191-Frame 3D Scroll Animation Section -->
+  <section class="scroll-stage-container" id="hero-stage">
+    <div class="sticky-viewport">
+      <canvas id="sequenceCanvas" aria-label="Anmol Digital Academy 3D scroll animation"></canvas>
+
+      <!-- Top Heading & Subheading (Fades away at 30% scroll of the animation section) -->
+      <div class="hero-top-heading" id="heroTopHeading">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-display leading-[1.15] text-white drop-shadow-[0_8px_32px_rgba(2,6,23,0.9)]">
+          Anmol <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500">Digital Academy</span>
+        </h1>
+        <div class="mt-4 inline-flex flex-wrap items-center justify-center gap-1.5 p-1.5 bg-slate-900/90 border border-slate-800 rounded-full text-xs sm:text-sm font-semibold shadow-2xl backdrop-blur-md">
+          <span class="px-4 py-1 rounded-full bg-blue-600 text-white font-bold font-display tracking-wider">LEARN</span>
+          <span class="text-slate-400">•</span>
+          <span class="px-4 py-1 rounded-full bg-amber-500 text-white font-bold font-display tracking-wider">GROW</span>
+          <span class="text-slate-400">•</span>
+          <span class="px-4 py-1 rounded-full bg-emerald-600 text-white font-bold font-display tracking-wider">EARN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Remaining Sections from code.html (Navbar & Hero Removed) -->
+  <section class="py-20 bg-slate-50 dark:bg-[#0b1022] border-y border-slate-200/80 dark:border-slate-800/80" id="framework">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-primary dark:text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">Our Core Methodology</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display tracking-tight mt-3 text-slate-900 dark:text-white">
+          The 4-Step Career &amp; Agency Blueprint
+        </h2>
+        <p class="text-base text-slate-600 dark:text-slate-400 mt-3">
+          We don’t do dry theoretical lectures. You build practical assets, deploy real ad spends, and generate verified revenue results.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl p-6 bg-white dark:bg-slate-900 border-2 border-blue-500/30 shadow-lg relative group hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-blue-600 text-white font-black font-display text-lg flex items-center justify-center mb-5 shadow-md shadow-blue-500/30">
+            01
+          </div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-500">Foundation</span>
+          <h3 class="text-xl font-bold font-display mt-1 text-slate-900 dark:text-white">LEARN</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Master the deep mechanics: Meta ad auctions, pixel telemetry, high-intent targeting psychology, and generative AI toolchains.
+          </p>
+          <ul class="mt-4 space-y-2 text-xs text-slate-500 dark:text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-blue-500 text-sm">check_circle</span> Auction &amp; Bidding Systems</li>
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-blue-500 text-sm">check_circle</span> ChatGPT &amp; Claude Copywriting</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl p-6 bg-white dark:bg-slate-900 border-2 border-purple-500/30 shadow-lg relative group hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-purple-600 text-white font-black font-display text-lg flex items-center justify-center mb-5 shadow-md shadow-purple-500/30">
+            02
+          </div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-500">Execution</span>
+          <h3 class="text-xl font-bold font-display mt-1 text-slate-900 dark:text-white">PRACTICE</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Run live-budget campaigns from Day 7. Create 10+ photorealistic AI video clones, voiceover reels, and frictionless sales landers.
+          </p>
+          <ul class="mt-4 space-y-2 text-xs text-slate-500 dark:text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-purple-500 text-sm">check_circle</span> Live Ad Spend Accounts</li>
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-purple-500 text-sm">check_circle</span> ElevenLabs &amp; HeyGen Avatars</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl p-6 bg-white dark:bg-slate-900 border-2 border-amber-500/30 shadow-lg relative group hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 font-black font-display text-lg flex items-center justify-center mb-5 shadow-md shadow-amber-500/30">
+            03
+          </div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Optimization</span>
+          <h3 class="text-xl font-bold font-display mt-1 text-slate-900 dark:text-white">GROW</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Diagnose fatigue, implement horizontal &amp; vertical budget scaling, build custom UTM sheets, and turn 1.5x ROAS into 5x+ returns.
+          </p>
+          <ul class="mt-4 space-y-2 text-xs text-slate-500 dark:text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-amber-500 text-sm">check_circle</span> Scaling CBO / ABO Strategy</li>
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-amber-500 text-sm">check_circle</span> Conversion Rate Optimizers</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl p-6 bg-white dark:bg-slate-900 border-2 border-emerald-500/40 shadow-lg relative group hover:-translate-y-1 transition-all duration-300 ring-2 ring-emerald-500/20">
+          <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-black font-display text-lg flex items-center justify-center mb-5 shadow-md shadow-emerald-500/30">
+            04
+          </div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-500">Monetization</span>
+          <h3 class="text-xl font-bold font-display mt-1 text-slate-900 dark:text-white">EARN</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Close domestic and high-ticket overseas retainers ($1,000+/mo), launch direct-to-consumer stores, or earn promotions as Media Buyer.
+          </p>
+          <ul class="mt-4 space-y-2 text-xs text-slate-500 dark:text-slate-400">
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Cold Pitch Templates &amp; Retainers</li>
+            <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Agency Invoicing &amp; Contracts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="courses">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-primary dark:text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">Industry Curriculum</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display tracking-tight mt-3 text-slate-900 dark:text-white">
+          Flagship Mastery Programs
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 mt-2 text-base max-w-xl">
+          Zero fluff. Only battle-tested digital playbooks taught directly by practitioners managing seven-figure monthly media spends.
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a class="px-5 py-2.5 rounded-xl border border-sky-400/40 text-sky-600 dark:text-sky-400 font-bold text-xs hover:bg-sky-500/10 transition-all flex items-center gap-2" href="https://wa.me/919922777105?text=Hi%20Anmol%20Digital%20Academy,%20please%20send%20me%20the%20detailed%20syllabus%20PDF">
+          <span class="material-symbols-outlined text-sm">download</span>
+          <span>Download All Syllabi (PDF)</span>
+        </a>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="rounded-3xl p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-sky-500/60 transition-all shadow-xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-extrabold">FLAGSHIP #01</span>
+            <span class="text-xs font-semibold text-emerald-500 flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span> New 2025 Meta AI Stack
+            </span>
+          </div>
+          <h3 class="text-2xl font-extrabold font-display text-slate-900 dark:text-white">Meta Ads Profit Blueprint</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+            Complete mastery of Facebook, Instagram, and WhatsApp Ads. Learn deep customer research, Advantage+ campaigns, CBO/ABO scale tactics, and bypass iOS tracking drops.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Format &amp; Duration</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">6 Weeks • Live Sessions</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Practical Projects</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">3 Live Ad Campaigns</span>
+            </div>
+          </div>
+          <div class="mt-6 space-y-2">
+            <div class="text-xs font-bold text-slate-700 dark:text-slate-300">Key Modules Covered:</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Pixel &amp; CAPI Setup</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Laser Targeting</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">ROAS Scaling to 6X</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Ad Fatigue Refresh</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-slate-400 line-through">₹18,999</span>
+            <div class="text-2xl font-black text-slate-900 dark:text-white font-display">₹6,999 <span class="text-xs font-bold text-emerald-500">(Early Seat)</span></div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a class="px-4 py-2.5 bg-[#25D366] hover:bg-[#1ebd5b] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 transition-transform hover:scale-105" href="https://wa.me/919922777105?text=I%20am%20interested%20in%20Meta%20Ads%20Blueprint">
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500/60 transition-all shadow-xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-extrabold">FLAGSHIP #02</span>
+            <span class="text-xs font-semibold text-purple-400 flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">smart_toy</span> Viral AI Engine
+            </span>
+          </div>
+          <h3 class="text-2xl font-extrabold font-display text-slate-900 dark:text-white">AI Video Creation &amp; Automation</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+            Create cinema-grade reels, UGC style ad videos, and talking avatars without showing your face or holding a camera. Harness Midjourney, HeyGen, ElevenLabs &amp; automated editing.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Format &amp; Duration</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">4 Weeks • Live + Labs</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Video Deliverables</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">15 Ready-to-Post Videos</span>
+            </div>
+          </div>
+          <div class="mt-6 space-y-2">
+            <div class="text-xs font-bold text-slate-700 dark:text-slate-300">Key Modules Covered:</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">HeyGen &amp; ElevenLabs</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Prompt Engineering</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Faceless YouTube Cash Cow</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">CapCut Auto-Captions</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-slate-400 line-through">₹16,999</span>
+            <div class="text-2xl font-black text-slate-900 dark:text-white font-display">₹5,999 <span class="text-xs font-bold text-purple-400">(Trending)</span></div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a class="px-4 py-2.5 bg-[#25D366] hover:bg-[#1ebd5b] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 transition-transform hover:scale-105" href="https://wa.me/919922777105?text=I%20am%20interested%20in%20AI%20Video%20Creation%20Course">
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/60 transition-all shadow-xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-extrabold">GROWTH &amp; REVENUE</span>
+            <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">payments</span> Agency Model
+            </span>
+          </div>
+          <h3 class="text-2xl font-extrabold font-display text-slate-900 dark:text-white">Digital Growth &amp; Client Acquisition</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm mt-3 leading-relaxed">
+            Never struggle for clients again. Plug-and-play cold DM systems, agency pitch decks, onboarding contracts, and closing $1,000 to $3,000 monthly retainer clients from USA, UK &amp; India.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Format &amp; Duration</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">4 Weeks • Live Sprints</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50">
+              <span class="text-slate-400 block text-[11px]">Resources</span>
+              <span class="font-bold text-slate-900 dark:text-white mt-0.5 block">25+ Scripts &amp; Decks</span>
+            </div>
+          </div>
+          <div class="mt-6 space-y-2">
+            <div class="text-xs font-bold text-slate-700 dark:text-slate-300">Key Modules Covered:</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Cold Loom Audits</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Closing Strategy Calls</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">Contract Templates</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded text-xs">International Payments</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-slate-400 line-through">₹14,999</span>
+            <div class="text-2xl font-black text-slate-900 dark:text-white font-display">₹4,999 <span class="text-xs font-bold text-emerald-500">(Special)</span></div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a class="px-4 py-2.5 bg-[#25D366] hover:bg-[#1ebd5b] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 transition-transform hover:scale-105" href="https://wa.me/919922777105?text=I%20am%20interested%20in%20Client%20Acquisition%20Course">
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl p-8 bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900 border-2 border-sky-400/50 shadow-2xl flex flex-col justify-between text-white relative overflow-hidden">
+        <div class="absolute -top-12 -right-12 w-40 h-40 bg-sky-500/20 rounded-full blur-2xl"></div>
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-sky-400/20 text-sky-300 text-xs font-extrabold border border-sky-400/30">ALL-IN-ONE BUNDLE</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-black bg-amber-400 text-slate-950 uppercase">Best Value</span>
+          </div>
+          <h3 class="text-2xl font-extrabold font-display">Full-Stack Digital Academy Elite</h3>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            Get lifetime access to Meta Ads Blueprint, AI Video Engine, Client Acquisition System + Weekly Live Masterminds with Head Mentor.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Mentorship</span>
+              <span class="font-bold text-sky-300 mt-0.5 block">Lifetime Weekly Access</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+              <span class="text-slate-400 block text-[11px]">Agency Certification</span>
+              <span class="font-bold text-emerald-400 mt-0.5 block">Included + Verifiable</span>
+            </div>
+          </div>
+          <div class="mt-6 space-y-2">
+            <div class="text-xs font-bold text-slate-300">Exclusive VIP Benefits:</div>
+            <ul class="text-xs text-slate-300 space-y-1.5">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-400 text-sm">verified</span> Direct WhatsApp support channel with Anmol</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-400 text-sm">verified</span> Ready-to-run Ad copy &amp; Canva asset vault</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-emerald-400 text-sm">verified</span> Client job leads passed directly to top grads</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-slate-700/80 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-slate-400 line-through">₹39,999</span>
+            <div class="text-3xl font-black text-white font-display">₹11,999</div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a class="px-5 py-3 bg-sky-400 hover:bg-sky-300 text-slate-950 font-black text-xs rounded-xl flex items-center gap-1.5 neon-glow-primary transition-transform hover:scale-105" href="https://wa.me/919922777105?text=I%20want%20to%20enroll%20in%20Full%20Stack%20Digital%20Academy%20VIP%20Bundle">
+              <span>Claim Bundle</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-800" id="results">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20 text-center">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl sm:text-4xl font-extrabold font-display text-sky-500">₹2.4 Cr+</div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-semibold mt-2">Revenue Generated by Students</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl sm:text-4xl font-extrabold font-display text-purple-500">15,000+</div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-semibold mt-2">Viral AI Videos Created</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl sm:text-4xl font-extrabold font-display text-emerald-500">450+</div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-semibold mt-2">Active Freelancers &amp; Agencies</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <div class="text-3xl sm:text-4xl font-extrabold font-display text-amber-500">94.8%</div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-semibold mt-2">Placement &amp; Project Success</p>
+        </div>
+      </div>
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold font-display text-slate-900 dark:text-white">Real Stories. Verified Numbers.</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">See how our alumni transitioned from complete novices to scaling businesses.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed">
+              "Before Anmol Academy, my Meta ROAS was stuck at 1.4x and I was losing money on ad spend. With the CBO scaling model &amp; AI hook framework, our D2C brand clocked 6.2x ROAS in 35 days!"
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">Rohan Deshmukh</div>
+              <div class="text-xs text-slate-500">D2C Brand Owner, Pune</div>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-500 text-xs font-bold">ROAS 1.4x → 6.2x</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed">
+              "The AI video workflow module alone was worth 10x the fee. I don't show my face on camera, yet my faceless finance reels page hit 180k followers and I signed 2 overseas sponsors."
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">Pooja Sharma</div>
+              <div class="text-xs text-slate-500">AI Creator &amp; Freelancer</div>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 text-xs font-bold">180K Followers</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+              <span class="material-symbols-outlined text-sm">star</span>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed">
+              "Being able to WhatsApp mentor Anmol directly whenever I got stuck inside Facebook Ads Manager was priceless. Closed my first Dubai real estate client on a ₹85,000/mo retainer."
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+            <div>
+              <div class="text-sm font-bold text-slate-900 dark:text-white">Sameer K.</div>
+              <div class="text-xs text-slate-500">Agency Founder</div>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 text-xs font-bold">₹85K/mo Client</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 relative" id="contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl p-8 sm:p-12 bg-gradient-to-tr from-slate-900 via-sky-950 to-slate-900 border border-sky-500/30 shadow-2xl relative overflow-hidden">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-6 text-white">
+            <span class="px-3.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold border border-emerald-500/30 inline-flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[#25D366] animate-ping"></span> Direct Mentor Hotline
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold font-display leading-tight">
+              Have questions before enrolling? Talk directly with Mentor Anmol.
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed">
+              Skip gatekeepers and chatbots. Send a direct WhatsApp DM or place a quick call at <span class="text-white font-bold underline decoration-sky-400">+91 9922777105</span> for custom batch scheduling, syllabus walkthroughs, or EMI options.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a class="px-6 py-3.5 bg-[#25D366] hover:bg-[#1ebd5b] text-white font-bold rounded-xl text-sm flex items-center gap-2 neon-glow-whatsapp transition-transform hover:scale-105" href="https://wa.me/919922777105?text=Hello%20Anmol%20Sir,%20I%20have%20questions%20regarding%20batch%20and%20curriculum" rel="noopener noreferrer" target="_blank">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-.981z"></path></svg>
+                <span>WhatsApp Mentor: +91 9922777105</span>
+              </a>
+              <a class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-sm border border-slate-700 flex items-center gap-2 transition-all" href="tel:+919922777105">
+                <span class="material-symbols-outlined text-sky-400">phone_in_talk</span>
+                <span>Call +91 9922777105</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl">
+            <h3 class="text-xl font-bold font-display text-slate-900 dark:text-white">Request a Priority Callback</h3>
+            <p class="text-xs text-slate-500 mt-1 mb-5">Fill in your details and mentor team will respond in under 15 minutes.</p>
+            <form class="space-y-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/919922777105?text=Hello%20Anmol%20Digital%20Academy,%20I%20just%20submitted%20the%20priority%20callback%20request';">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Full Name</label>
+                <input class="w-full text-sm rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-sky-500 focus:border-sky-500" placeholder="e.g. Rahul Verma" required="" type="text" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">WhatsApp Mobile Number</label>
+                <input class="w-full text-sm rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-sky-500 focus:border-sky-500" placeholder="+91 98765 43210" required="" type="tel" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Program of Interest</label>
+                <select class="w-full text-sm rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-sky-500 focus:border-sky-500">
+                  <option>Meta Ads Profit Blueprint</option>
+                  <option>AI Video Creation &amp; Automation</option>
+                  <option>Digital Growth &amp; Client Acquisition</option>
+                  <option>Full-Stack Academy Elite (All-In-One)</option>
+                </select>
+              </div>
+              <button class="w-full py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-lg text-sm neon-glow-primary transition-all" type="submit">
+                Send Enquiry via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <a class="group flex items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#1ebd5b] text-white rounded-full shadow-2xl neon-glow-whatsapp transition-all duration-300 hover:scale-105" href="https://wa.me/919922777105?text=Hello%20Anmol%20Sir,%20I%20want%20to%20know%20more%20about%20the%20digital%20marketing%20courses" rel="noopener noreferrer" target="_blank">
+      <svg class="w-6 h-6 fill-current animate-pulse" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.842-.981z"></path></svg>
+      <div class="text-left pr-1 hidden sm:block">
+        <span class="block text-[10px] uppercase font-bold text-emerald-100 leading-none">Instant WhatsApp</span>
+        <span class="block text-xs font-black tracking-wide">+91 9922777105</span>
+      </div>
+    </a>
+  </div>
+
+  <footer class="bg-slate-900 dark:bg-[#040711] text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-500 flex items-center justify-center text-white font-black text-xl">A</div>
+            <div>
+              <span class="text-xl font-extrabold font-display text-white">ANMOL DIGITAL ACADEMY</span>
+              <p class="text-xs text-sky-400 font-medium">Learn • Practice • Grow • Earn</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            India's practical institute for High-ROI Meta Ads engineering, Generative AI video creation, and high-ticket client acquisition for ambitious founders and marketers.
+          </p>
+          <div class="pt-2 space-y-1.5 text-xs">
+            <div class="flex items-center gap-2 text-slate-300">
+              <span class="material-symbols-outlined text-sky-400 text-sm">phone</span>
+              <span>Direct Support / Helpline: <a class="hover:text-white font-bold text-slate-200" href="tel:+919922777105">+91 9922777105</a></span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-300">
+              <span class="material-symbols-outlined text-emerald-400 text-sm">chat</span>
+              <span>WhatsApp Direct DM: <a class="hover:text-emerald-400 font-bold text-slate-200" href="https://wa.me/919922777105">+91 9922777105</a></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-display">Programs</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a class="hover:text-white transition-colors" href="#courses">Meta Ads Profit Blueprint</a></li>
+            <li><a class="hover:text-white transition-colors" href="#courses">AI Video Creation &amp; Reels</a></li>
+            <li><a class="hover:text-white transition-colors" href="#courses">Agency Client Acquisition</a></li>
+            <li><a class="hover:text-white transition-colors" href="#courses">Full Stack Elite Bundle</a></li>
+            <li><a class="hover:text-white transition-colors" href="#framework">The 4-Step Methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-display">Learning Tools</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a class="hover:text-white transition-colors" href="https://wa.me/919922777105">Meta ROAS Calculator (Free)</a></li>
+            <li><a class="hover:text-white transition-colors" href="https://wa.me/919922777105">AI Video Prompt Cheatsheet</a></li>
+            <li><a class="hover:text-white transition-colors" href="https://wa.me/919922777105">Client Outreach Cold Templates</a></li>
+            <li><a class="hover:text-white transition-colors" href="#results">Student Case Studies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-display">Fast Enrollment</h4>
+          <p class="text-xs text-slate-400 mb-3">Batch seats are limited to 25 students per cohort to ensure hands-on attention.</p>
+          <a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] hover:bg-[#1ebd5b] text-white text-xs font-bold transition-all" href="https://wa.me/919922777105">
+            <span>Instant WhatsApp Chat</span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-800 text-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2025 Anmol Digital Academy. All Rights Reserved. Built for high performance marketers.</p>
+        <div class="flex items-center gap-6">
+          <a class="hover:text-white" href="#">Privacy Policy</a>
+          <a class="hover:text-white" href="#">Terms of Enrollment</a>
+          <a class="text-sky-400 font-bold hover:underline" href="tel:+919922777105">+91 9922777105</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
